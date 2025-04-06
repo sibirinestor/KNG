@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background:White ;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+header.scrolled {
+    background: rgba(79, 74, 74, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: Black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
+.accueil {
+    height: 100vh;
+    background: url('../images/palm.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.accueil .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.accueil-content {
+    z-index: 2;
+}
+
+.accueil-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.accueil-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    padding: 12px 30px;
+    background: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-cta:hover {
+    background: #cc7700;
+    transform: scale(1.05);
+}
+
+/* À Propos */
+.apropos {
+    padding: 80px 50px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.apropos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4f4a4a;
+}
+
+.zigzag-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    opacity: 0;
+}
+
+.zigzag-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.zigzag-item:hover .text-content,
+.zigzag-item:hover .image-content img {
+   width:150%;
+    transform: scale(1.05);
+}
+
+
+.produits {
+    padding: 80px 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.produits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4f4a4a;
+}
+
+.produit-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produit-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+}
+
+.produit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.produit-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff9900;
+}
+
+.produit-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.produit-details h3 {
+    font-size: 1.5rem;
+    color: #4f4a4a;
+    margin-bottom: 10px;
+}
+
+.produit-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produit-details .prix {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.btn-commande {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-commande:hover {
+    background: #1ebe56;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ff9900;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-section p i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+    transform: scale(1.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #444;
+    color: #fff;
+    outline: none;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.btn-envoyer {
+    padding: 10px 20px;
+    background: #1ebe56;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-envoyer:hover {
+    background: #cc7700;
+    transform: scale(1.05);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.special {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+
+.page-section {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-90deg);
+    transform-origin: left;
+}
+
+.page-section.visible {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+@keyframes flipPage {
+    0% {
+        opacity: 0;
+        transform: perspective(1000px) rotateY(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+.zigzag-item, .produit-card {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.zigzag-item.visible, .produit-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
