@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 .accueil {
     height: 100vh;
-    background: url('../images/palm.jpg') no-repeat center/cover;
+    background: url('images/palm.jpg') no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
