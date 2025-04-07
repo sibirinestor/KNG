@@ -358,7 +358,7 @@ footer {
     background: #1ebe56;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
