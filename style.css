@@ -11,12 +11,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background:White ;
+    padding: 10px 5%;
+    background: white;
     color: white;
     position: fixed;
     width: 100%;
@@ -36,11 +37,11 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: Black;
+    color: black;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -66,6 +67,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+/* Accueil Section */
 .accueil {
     height: 100vh;
     background: url('images/palm.jpg') no-repeat center/cover;
@@ -88,21 +90,22 @@ nav ul li a:hover {
 
 .accueil-content {
     z-index: 2;
+    padding: 20px;
 }
 
 .accueil-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .accueil-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
 .btn-cta {
-    padding: 12px 30px;
+    padding: 10px 25px;
     background: #ff9900;
     color: white;
     text-decoration: none;
@@ -116,16 +119,16 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* À Propos */
+/* À Propos Section */
 .apropos {
-    padding: 80px 50px;
+    padding: 60px 5%;
     background: #f7f7f7;
     text-align: center;
 }
 
 .apropos h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 30px;
     color: #4f4a4a;
 }
 
@@ -138,8 +141,9 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     opacity: 0;
+    flex-wrap: wrap;
 }
 
 .zigzag-item.reverse {
@@ -148,7 +152,7 @@ nav ul li a:hover {
 
 .text-content {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -156,19 +160,19 @@ nav ul li a:hover {
 }
 
 .text-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #ff9900;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .text-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #555;
 }
 
 .image-content {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 .image-content img {
@@ -181,30 +185,29 @@ nav ul li a:hover {
 
 .zigzag-item:hover .text-content,
 .zigzag-item:hover .image-content img {
-   width:150%;
     transform: scale(1.05);
 }
 
-
+/* Produits Section */
 .produits {
-    padding: 80px 50px;
+    padding: 60px 5%;
     background: #f9f9f9;
     text-align: center;
 }
 
 .produits h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 30px;
     color: #4f4a4a;
 }
 
 .produit-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -232,32 +235,31 @@ nav ul li a:hover {
 }
 
 .produit-details {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 .produit-details h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #4f4a4a;
     margin-bottom: 10px;
 }
 
 .produit-details p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #666;
     margin-bottom: 15px;
 }
 
 .produit-details .prix {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #ff9900;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .btn-commande {
-    display: inline-block;
-    padding: 10px 25px;
+    padding: 8px 20px;
     background: #25D366;
     color: white;
     text-decoration: none;
@@ -271,11 +273,11 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-
+/* Footer */
 footer {
     background: #333;
     color: #fff;
-    padding: 40px 20px;
+    padding: 30px 5%;
     font-size: 0.9rem;
 }
 
@@ -288,40 +290,36 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 20px;
+    margin: 15px;
 }
 
 .footer-section h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
     color: #ff9900;
 }
 
 .footer-section p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #ccc;
-}
-
-.footer-section p i {
-    margin-right: 10px;
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: flex-start;
 }
 
 .social-icons a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -333,15 +331,15 @@ footer {
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background: #444;
     color: #fff;
     outline: none;
@@ -354,7 +352,7 @@ footer {
 }
 
 .btn-envoyer {
-    padding: 10px 20px;
+    padding: 8px 15px;
     background: #1ebe56;
     color: #fff;
     border: none;
@@ -371,11 +369,11 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .copyright {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #ccc;
 }
 
@@ -384,7 +382,7 @@ footer {
     color: #ff9900;
 }
 
-
+/* Animation */
 .page-section {
     opacity: 0;
     transform: perspective(1000px) rotateY(-90deg);
@@ -416,4 +414,100 @@ footer {
 .zigzag-item.visible, .produit-card.visible {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 3%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .accueil-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .accueil-content p {
+        font-size: 1rem;
+    }
+
+    .apropos, .produits {
+        padding: 40px 3%;
+    }
+
+    .apropos h2, .produits h2 {
+        font-size: 1.8rem;
+    }
+
+    .zigzag-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .zigzag-item.reverse {
+        flex-direction: column;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .produit-card {
+        max-width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .accueil-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .accueil-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-cta, .btn-commande {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .text-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .produit-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .produit-details p {
+        font-size: 0.85rem;
+    }
+
+    .produit-details .prix {
+        font-size: 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
 }
